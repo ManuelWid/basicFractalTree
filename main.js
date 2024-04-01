@@ -10,7 +10,6 @@ canvas.height = 600;
 const ctx = canvas.getContext("2d");
 
 // vars for drawing
-let drawing = true;
 let angle = 45;
 const lengthBy = 0.75;
 
@@ -26,9 +25,7 @@ function draw(){
 
     branch(150);
 
-    if(drawing){
-        requestAnimationFrame(draw);
-    }
+    requestAnimationFrame(draw);
 }
 
 requestAnimationFrame(draw);
